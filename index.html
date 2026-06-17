@@ -28,8 +28,6 @@
   h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; }
   .subtitle { font-size: 1rem; color: var(--muted); margin-bottom: 0.6rem; }
   .contact { font-size: 0.85rem; color: var(--muted); }
-  .contact a { color: var(--accent); text-decoration: none; }
-  .contact a:hover { text-decoration: underline; }
 
   section { margin-bottom: 1.5rem; }
   h2 {
@@ -43,10 +41,15 @@
     padding-bottom: 0.25rem;
   }
 
-  p, .skills-text, .entry, .compact-list { font-size: 0.9rem; line-height: 1.65; }
+  p, .entry, .compact-list { font-size: 0.9rem; line-height: 1.65; }
 
-  .skills-text { color: var(--text); }
+  /* Skills grid */
+  .skill-group { margin-bottom: 0.5rem; }
+  .skill-group:last-child { margin-bottom: 0; }
+  .skill-group strong { font-size: 0.8rem; font-weight: 600; color: var(--muted); display: block; margin-bottom: 0.15rem; }
+  .skill-group span { font-size: 0.9rem; }
 
+  /* Experience */
   .entry { margin-bottom: 1rem; }
   .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
   .entry-title { font-weight: 600; }
@@ -55,6 +58,12 @@
   .entry ul { list-style: none; padding: 0; margin-top: 0.2rem; }
   .entry li { padding-left: 1rem; position: relative; margin-bottom: 0.2rem; }
   .entry li::before { content: "–"; position: absolute; left: 0; color: var(--muted); }
+
+  /* Projects */
+  .project { margin-bottom: 0.75rem; }
+  .project:last-child { margin-bottom: 0; }
+  .project-title { font-weight: 600; font-size: 0.9rem; }
+  .project-desc { font-size: 0.85rem; color: var(--muted); }
 
   .compact-list { list-style: none; }
   .compact-list li { margin-bottom: 0.2rem; }
@@ -90,11 +99,21 @@
 
 <section id="skills">
   <h2>Skills</h2>
-  <p class="skills-text">
-    Dynamics 365, Power Platform, Plugins (C#), Model Driven Apps, JavaScript, TypeScript,
-    Webpack, Vite, Web Resources, Power Automate, Dataflows, KingswaySoft, AI Dev Workflows,
-    Java, Python, NumPy, C++, C#
-  </p>
+
+  <div class="skill-group">
+    <strong>Dynamics &amp; Power Platform</strong>
+    <span>Plugins (C#), Model Driven App Customisation, JavaScript, TypeScript, Web Resources, Webpack, Vite, Power Automate, Dataflows, KingswaySoft, AI Dev Workflows</span>
+  </div>
+
+  <div class="skill-group">
+    <strong>Programming Languages</strong>
+    <span>Java, Python, C++, C#, TypeScript, JavaScript</span>
+  </div>
+
+  <div class="skill-group">
+    <strong>Tools &amp; Libraries</strong>
+    <span>NumPy, Unity, Embedded Systems</span>
+  </div>
 </section>
 
 <section id="experience">
@@ -107,8 +126,37 @@
     </div>
     <div class="entry-org">Adaptable Consulting — Auckland, NZ</div>
     <ul>
-      <li>Building Dynamics 365 / Power Platform solutions for clients across NZ</li>
+      <li>Building and extending Dynamics 365 / Power Platform solutions for NZ clients</li>
     </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <div class="project-title">Plugins &middot; Adaptable Consulting</div>
+    <div class="project-desc">Custom Dynamics 365 plugins for client-specific business logic, validation, and integration workflows.</div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Power Automate Workflows &middot; Adaptable Consulting</div>
+    <div class="project-desc">Automated business processes including approvals, notifications, and cross-system data synchronisation.</div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Data Integrations (KingswaySoft) &middot; Adaptable Consulting</div>
+    <div class="project-desc">ETL-style data migrations and integrations between legacy systems and Dynamics 365 using KingswaySoft.</div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Model Driven App Customisation &middot; Adaptable Consulting</div>
+    <div class="project-desc">Custom forms, views, business rules, and web resources tailored to client requirements.</div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">AI-Assisted Dev Workflows &middot; Adaptable Consulting</div>
+    <div class="project-desc">Integration of AI tooling into Dynamics 365 / Power Platform development pipelines.</div>
   </div>
 </section>
 
