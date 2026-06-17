@@ -43,13 +43,11 @@
 
   p, .entry, .compact-list { font-size: 0.9rem; line-height: 1.65; }
 
-  /* Skills grid */
   .skill-group { margin-bottom: 0.5rem; }
   .skill-group:last-child { margin-bottom: 0; }
   .skill-group strong { font-size: 0.8rem; font-weight: 600; color: var(--muted); display: block; margin-bottom: 0.15rem; }
   .skill-group span { font-size: 0.9rem; }
 
-  /* Experience */
   .entry { margin-bottom: 1rem; }
   .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
   .entry-title { font-weight: 600; }
@@ -59,7 +57,6 @@
   .entry li { padding-left: 1rem; position: relative; margin-bottom: 0.2rem; }
   .entry li::before { content: "–"; position: absolute; left: 0; color: var(--muted); }
 
-  /* Projects */
   .project { margin-bottom: 0.75rem; }
   .project:last-child { margin-bottom: 0; }
   .project-title { font-weight: 600; font-size: 0.9rem; }
@@ -91,9 +88,11 @@
   <h2>Summary</h2>
   <p>
     Dynamics 365 / Power Platform developer with 2 years experience at Adaptable Consulting.
-    PL-200 and PL-900 certified. Experienced in custom plugins, web resources, Power Automate
-    workflows, data integrations with KingswaySoft, and AI-assisted dev workflows.
-    Background in Computer Science from the University of Canterbury.
+    PL-200 and PL-900 certified. Built complex Power Automate workflows, Azure Function Apps,
+    custom plugins, and TypeScript web resources. Pioneered the company's adoption of TypeScript,
+    Webpack, and monorepo architecture. Experienced in on-prem to online migrations, Dataverse,
+    KingswaySoft integrations, and SharePoint automation. Background in Computer Science from
+    the University of Canterbury.
   </p>
 </section>
 
@@ -102,7 +101,12 @@
 
   <div class="skill-group">
     <strong>Dynamics &amp; Power Platform</strong>
-    <span>Plugins (C#), Model Driven App Customisation, JavaScript, TypeScript, Web Resources, Webpack, Vite, Power Automate, Dataflows, KingswaySoft, AI Dev Workflows</span>
+    <span>Plugins (C#), Model Driven Apps, JavaScript, TypeScript, Webpack, Vite, Web Resources, Power Automate, Dataflows, Dataverse, KingswaySoft</span>
+  </div>
+
+  <div class="skill-group">
+    <strong>Azure</strong>
+    <span>Function Apps, Storage Queues, Managed Identity, Authentication</span>
   </div>
 
   <div class="skill-group">
@@ -112,7 +116,7 @@
 
   <div class="skill-group">
     <strong>Tools &amp; Libraries</strong>
-    <span>NumPy, Unity, Embedded Systems</span>
+    <span>NumPy, Unity, Git, CI/CD, SharePoint</span>
   </div>
 </section>
 
@@ -126,7 +130,12 @@
     </div>
     <div class="entry-org">Adaptable Consulting — Auckland, NZ</div>
     <ul>
-      <li>Building and extending Dynamics 365 / Power Platform solutions for NZ clients</li>
+      <li>Pioneered the company's move to TypeScript + Webpack, replacing legacy JavaScript web resources with a modern build pipeline</li>
+      <li>Established a monorepo architecture for client projects containing plugins, TypeScript/Webpack projects, and solution files — all git-controlled with CI/CD pipelines</li>
+      <li>Led on-premises to online migration for a major client (Tepukinga tertiary education integration), upgrading all deprecated JavaScript and SQL stored procedures</li>
+      <li>Built complex Power Automate flows including NZ Law Society complaints intake and cross-site SharePoint document workflows</li>
+      <li>Developed Azure Function Apps handling authentication, storage queues, and managed identity</li>
+      <li>Created and maintained custom Dynamics 365 plugins — both fixing existing and building new projects from scratch</li>
     </ul>
   </div>
 </section>
@@ -135,28 +144,38 @@
   <h2>Projects</h2>
 
   <div class="project">
-    <div class="project-title">NZQA Integration Upgrade &middot; Adaptable Consulting</div>
-    <div class="project-desc">Upgraded a Tepukinga/NZQA integration from deprecated SQL stored procedures to modern Dataflows, improving maintainability and reducing manual intervention.</div>
+    <div class="project-title">Tepukinga (NZ Tertiary Education) On-Prem to Online Migration</div>
+    <div class="project-desc">Migrated a split Online/Connect system from on-premises Dynamics to online. Rewrote all deprecated JavaScript web resources and upgraded SQL stored procedures to modern Dataflows.</div>
   </div>
 
   <div class="project">
-    <div class="project-title">Plugins &middot; Adaptable Consulting</div>
-    <div class="project-desc">Custom Dynamics 365 plugins for client-specific business logic, validation, and integration workflows.</div>
+    <div class="project-title">TypeScript + Webpack Adoption</div>
+    <div class="project-desc">Pioneered the company's move from basic JavaScript to TypeScript + Webpack with a monorepo build pipeline, now used as the standard approach for new clients.</div>
   </div>
 
   <div class="project">
-    <div class="project-title">Power Automate Workflows &middot; Adaptable Consulting</div>
-    <div class="project-desc">Automated business processes including approvals, notifications, and cross-system data synchronisation.</div>
+    <div class="project-title">NZ Law Society Complaints Process</div>
+    <div class="project-desc">Built a complex complaints form and intake process using Power Automate.</div>
   </div>
 
   <div class="project">
-    <div class="project-title">Data Integrations (KingswaySoft) &middot; Adaptable Consulting</div>
-    <div class="project-desc">ETL-style data migrations and integrations between legacy systems and Dynamics 365 using KingswaySoft.</div>
+    <div class="project-title">SharePoint Automation</div>
+    <div class="project-desc">Complex Power Automate flows handling cross-site document movement driven by field values and Business Process Flow stages.</div>
   </div>
 
   <div class="project">
-    <div class="project-title">Model Driven App Customisation &middot; Adaptable Consulting</div>
-    <div class="project-desc">Custom forms, views, business rules, and web resources tailored to client requirements.</div>
+    <div class="project-title">Azure Function Apps</div>
+    <div class="project-desc">Built Function Apps with authentication handling, storage queues, and managed identity.</div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Custom Plugins</div>
+    <div class="project-desc">Built new plugin projects from scratch, defining the architecture and approach — not just maintenance.</div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">KingswaySoft Data Integrations</div>
+    <div class="project-desc">ETL-style data migrations and integrations between legacy systems and Dynamics 365.</div>
   </div>
 </section>
 
