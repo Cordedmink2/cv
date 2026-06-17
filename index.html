@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Connor Parsons — CV</title>
 <style>
-  /* KISS — system fonts, no frameworks, no JS */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --text: #1a1a2e;
@@ -13,7 +12,7 @@
     --accent: #2563eb;
     --border: #e2e8f0;
     --bg: #fff;
-    --max-w: 720px;
+    --max-w: 680px;
   }
   html { font-size: 16px; }
   body {
@@ -23,64 +22,48 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-  .container { max-width: var(--max-w); margin: 0 auto; padding: 3rem 1.5rem; }
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 2.5rem 1.25rem; }
 
-  /* Header */
-  header { margin-bottom: 2.5rem; }
-  h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
-  .subtitle { font-size: 1.1rem; color: var(--muted); margin-bottom: 0.75rem; }
-  .contact { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.9rem; color: var(--muted); }
+  header { margin-bottom: 2rem; }
+  h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; }
+  .subtitle { font-size: 1rem; color: var(--muted); margin-bottom: 0.6rem; }
+  .contact { font-size: 0.85rem; color: var(--muted); }
   .contact a { color: var(--accent); text-decoration: none; }
   .contact a:hover { text-decoration: underline; }
 
-  /* Sections */
-  section { margin-bottom: 2rem; }
+  section { margin-bottom: 1.5rem; }
   h2 {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     color: var(--muted);
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.35rem;
+    margin-bottom: 0.5rem;
     border-bottom: 1px solid var(--border);
+    padding-bottom: 0.25rem;
   }
 
-  /* Summary */
-  #summary p { font-size: 0.95rem; }
+  p, .skills-text, .entry, .compact-list { font-size: 0.9rem; line-height: 1.65; }
 
-  /* Skills */
-  .skills { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; }
-  .skills li {
-    background: #f1f5f9;
-    padding: 0.2rem 0.65rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    color: var(--text);
-  }
-  .skills .cat { width: 100; font-size: 0.8rem; font-weight: 600; color: var(--muted); background: none; padding-left: 0; }
+  .skills-text { color: var(--text); }
 
-  /* Experience */
-  .entry { margin-bottom: 1.25rem; }
-  .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.2rem; }
-  .entry-title { font-weight: 600; font-size: 1rem; }
-  .entry-org { font-weight: 500; }
-  .entry-date { font-size: 0.85rem; color: var(--muted); }
-  .entry-desc { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.35rem; }
-  .entry ul { list-style: none; padding: 0; }
-  .entry li { font-size: 0.9rem; padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .entry { margin-bottom: 1rem; }
+  .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+  .entry-title { font-weight: 600; }
+  .entry-org { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.2rem; }
+  .entry-date { font-size: 0.8rem; color: var(--muted); }
+  .entry ul { list-style: none; padding: 0; margin-top: 0.2rem; }
+  .entry li { padding-left: 1rem; position: relative; margin-bottom: 0.2rem; }
   .entry li::before { content: "–"; position: absolute; left: 0; color: var(--muted); }
 
-  /* Education / Certs */
   .compact-list { list-style: none; }
-  .compact-list li { font-size: 0.9rem; margin-bottom: 0.3rem; }
+  .compact-list li { margin-bottom: 0.2rem; }
 
-  /* Footer */
-  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--muted); text-align: center; }
+  footer { margin-top: 2rem; padding-top: 0.75rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--muted); text-align: center; }
 
   @media (max-width: 480px) {
-    .container { padding: 1.5rem 1rem; }
-    h1 { font-size: 1.6rem; }
+    .container { padding: 1.25rem 0.85rem; }
+    h1 { font-size: 1.4rem; }
   }
 </style>
 </head>
@@ -91,43 +74,28 @@
   <h1>Connor Parsons</h1>
   <p class="subtitle">Dynamics 365 / Power Platform Developer</p>
   <div class="contact">
-    <span>connorparsons02@gmail.com</span>
-    <span>New Zealand</span>
-    <span><a href="https://github.com/cordedmink2">github.com/cordedmink2</a></span>
+    connorparsons02@gmail.com &middot; New Zealand &middot;
+    <a href="https://github.com/cordedmink2">github.com/cordedmink2</a>
   </div>
 </header>
 
 <section id="summary">
   <h2>Summary</h2>
   <p>
-    Dynamics 365 / Power Platform developer with 2 years experience at Adaptable Consulting. 
-    PL-200 certified. Experienced in building custom plugins, web resources, Power Automate workflows, 
-    data integrations with KingswaySoft, and AI-assisted dev workflows. 
+    Dynamics 365 / Power Platform developer with 2 years experience at Adaptable Consulting.
+    PL-200 and PL-900 certified. Experienced in custom plugins, web resources, Power Automate
+    workflows, data integrations with KingswaySoft, and AI-assisted dev workflows.
     Background in Computer Science from the University of Canterbury.
   </p>
 </section>
 
 <section id="skills">
   <h2>Skills</h2>
-  <ul class="skills">
-    <li class="cat">Dynamics / Power Platform</li>
-    <li>Plugins (C#)</li>
-    <li>Model Driven App Customization</li>
-    <li>JavaScript / TypeScript</li>
-    <li>Webpack &amp; Vite</li>
-    <li>Web Resources</li>
-    <li>Power Automate</li>
-    <li>Dataflows</li>
-    <li>KingswaySoft</li>
-    <li>AI Dev Workflows</li>
-
-    <li class="cat">General</li>
-    <li>Java</li>
-    <li>Python</li>
-    <li>NumPy</li>
-    <li>C++</li>
-    <li>C#</li>
-  </ul>
+  <p class="skills-text">
+    Dynamics 365, Power Platform, Plugins (C#), Model Driven Apps, JavaScript, TypeScript,
+    Webpack, Vite, Web Resources, Power Automate, Dataflows, KingswaySoft, AI Dev Workflows,
+    Java, Python, NumPy, C++, C#
+  </p>
 </section>
 
 <section id="experience">
@@ -139,9 +107,8 @@
       <span class="entry-date">2024 – Present</span>
     </div>
     <div class="entry-org">Adaptable Consulting — Auckland, NZ</div>
-    <div class="entry-desc">Building and extending Dynamics 365 / Power Platform solutions for clients.</div>
     <ul>
-      <li>[Project details coming — plugins, web resources, Power Automate, data integrations, etc.]</li>
+      <li>Building Dynamics 365 / Power Platform solutions for clients across NZ</li>
     </ul>
   </div>
 </section>
@@ -149,7 +116,7 @@
 <section id="education">
   <h2>Education</h2>
   <ul class="compact-list">
-    <li><strong>University of Canterbury</strong> — Bachelor of Science, Computer Science</li>
+    <li><strong>University of Canterbury</strong> — BSc, Computer Science</li>
     <li><strong>St Peter's College, Auckland</strong> — Cambridge A Levels</li>
   </ul>
 </section>
@@ -157,12 +124,13 @@
 <section id="certifications">
   <h2>Certifications</h2>
   <ul class="compact-list">
-    <li><strong>Microsoft PL-200</strong> — Power Platform Functional Consultant</li>
+    <li><strong>PL-200</strong> — Power Platform Functional Consultant</li>
+    <li><strong>PL-900</strong> — Power Platform Fundamentals</li>
   </ul>
 </section>
 
 <footer>
-  <p>Connor Parsons &middot; connorparsons02@gmail.com</p>
+  Connor Parsons &middot; connorparsons02@gmail.com
 </footer>
 
 </div>
