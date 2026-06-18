@@ -1,204 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Connor Parsons — CV</title>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Connor Parsons — CV</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --text: #1a1a2e;
-    --muted: #555;
-    --accent: #2563eb;
-    --border: #e2e8f0;
-    --bg: #fff;
-    --max-w: 680px;
-  }
-  html { font-size: 16px; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: var(--text);
-    background: var(--bg);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  .container { max-width: var(--max-w); margin: 0 auto; padding: 2.5rem 1.25rem; }
-
-  header { margin-bottom: 2rem; }
-  h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; }
-  .subtitle { font-size: 1rem; color: var(--muted); margin-bottom: 0.6rem; }
-  .contact { font-size: 0.85rem; color: var(--muted); }
-
-  section { margin-bottom: 1.5rem; }
-  h2 {
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.25rem;
-  }
-
-  p, .entry, .compact-list { font-size: 0.9rem; line-height: 1.65; }
-
-  .skill-group { margin-bottom: 0.5rem; }
-  .skill-group:last-child { margin-bottom: 0; }
-  .skill-group strong { font-size: 0.8rem; font-weight: 600; color: var(--muted); display: block; margin-bottom: 0.15rem; }
-  .skill-group span { font-size: 0.9rem; }
-
-  .entry { margin-bottom: 1rem; }
-  .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
-  .entry-title { font-weight: 600; }
-  .entry-org { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.2rem; }
-  .entry-date { font-size: 0.8rem; color: var(--muted); }
-  .entry ul { list-style: none; padding: 0; margin-top: 0.2rem; }
-  .entry li { padding-left: 1rem; position: relative; margin-bottom: 0.2rem; }
-  .entry li::before { content: "–"; position: absolute; left: 0; color: var(--muted); }
-
-  .project { margin-bottom: 0.75rem; }
-  .project:last-child { margin-bottom: 0; }
-  .project-title { font-weight: 600; font-size: 0.9rem; }
-  .project-desc { font-size: 0.85rem; color: var(--muted); }
-
-  .compact-list { list-style: none; }
-  .compact-list li { margin-bottom: 0.2rem; }
-
-  footer { margin-top: 2rem; padding-top: 0.75rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--muted); text-align: center; }
-
-  @media (max-width: 480px) {
-    .container { padding: 1.25rem 0.85rem; }
-    h1 { font-size: 1.4rem; }
-  }
-</style>
-</head>
-<body>
-<div class="container">
-
-<header>
-  <h1>Connor Parsons</h1>
-  <p class="subtitle">Dynamics 365 / Power Platform Developer</p>
-  <div class="contact">
-    connorparsons02@gmail.com &middot; +64 20 4140 7002 &middot; New Zealand
-  </div>
-</header>
-
-<section id="summary">
-  <h2>Summary</h2>
-  <p>
-    Dynamics 365 / Power Platform developer with 2 years experience at Adaptable Consulting.
-    PL-200 and PL-900 certified. Built complex Power Automate workflows, Azure Function Apps,
-    custom plugins, and TypeScript web resources. Pioneered the company's adoption of TypeScript,
-    Webpack, and monorepo architecture. Experienced in on-prem to online migrations, Dataverse,
-    KingswaySoft integrations, and SharePoint automation. Background in Computer Science from
-    the University of Canterbury.
-  </p>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-
-  <div class="skill-group">
-    <strong>Dynamics &amp; Power Platform</strong>
-    <span>Plugins (C#), Model Driven Apps, JavaScript, TypeScript, Webpack, Vite, Web Resources, Power Automate, Dataflows, Dataverse, KingswaySoft</span>
-  </div>
-
-  <div class="skill-group">
-    <strong>Azure</strong>
-    <span>Function Apps, Storage Queues, Managed Identity, Authentication</span>
-  </div>
-
-  <div class="skill-group">
-    <strong>Programming Languages</strong>
-    <span>Java, Python, C++, C#, TypeScript, JavaScript</span>
-  </div>
-
-  <div class="skill-group">
-    <strong>Tools &amp; Libraries</strong>
-    <span>NumPy, Unity, Git, CI/CD, SharePoint</span>
-  </div>
-</section>
-
-<section id="experience">
-  <h2>Experience</h2>
-
-  <div class="entry">
-    <div class="entry-header">
-      <span class="entry-title">Developer</span>
-      <span class="entry-date">2024 – Present</span>
-    </div>
-    <div class="entry-org">Adaptable Consulting — Auckland, NZ</div>
-    <ul>
-      <li>Pioneered the company's move to TypeScript + Webpack, replacing legacy JavaScript web resources with a modern build pipeline</li>
-      <li>Established a monorepo architecture for client projects containing plugins, TypeScript/Webpack projects, and solution files — all git-controlled with CI/CD pipelines</li>
-      <li>Led on-premises to online migration for a major client (Tepukinga tertiary education integration), upgrading all deprecated JavaScript and SQL stored procedures</li>
-      <li>Built complex Power Automate flows including NZ Law Society complaints intake and cross-site SharePoint document workflows</li>
-      <li>Developed Azure Function Apps handling authentication, storage queues, and managed identity</li>
-      <li>Created and maintained custom Dynamics 365 plugins — both fixing existing and building new projects from scratch</li>
-    </ul>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project">
-    <div class="project-title">Tepukinga (NZ Tertiary Education) On-Prem to Online Migration</div>
-    <div class="project-desc">Migrated a split Online/Connect system from on-premises Dynamics to online. Rewrote all deprecated JavaScript web resources and upgraded SQL stored procedures to modern Dataflows.</div>
-  </div>
-
-  <div class="project">
-    <div class="project-title">TypeScript + Webpack Adoption</div>
-    <div class="project-desc">Pioneered the company's move from basic JavaScript to TypeScript + Webpack with a monorepo build pipeline, now used as the standard approach for new clients.</div>
-  </div>
-
-  <div class="project">
-    <div class="project-title">NZ Law Society Complaints Process</div>
-    <div class="project-desc">Built a complex complaints form and intake process using Power Automate.</div>
-  </div>
-
-  <div class="project">
-    <div class="project-title">SharePoint Automation</div>
-    <div class="project-desc">Complex Power Automate flows handling cross-site document movement driven by field values and Business Process Flow stages.</div>
-  </div>
-
-  <div class="project">
-    <div class="project-title">Azure Function Apps</div>
-    <div class="project-desc">Built Function Apps with authentication handling, storage queues, and managed identity.</div>
-  </div>
-
-  <div class="project">
-    <div class="project-title">Custom Plugins</div>
-    <div class="project-desc">Built new plugin projects from scratch, defining the architecture and approach — not just maintenance.</div>
-  </div>
-
-  <div class="project">
-    <div class="project-title">KingswaySoft Data Integrations</div>
-    <div class="project-desc">ETL-style data migrations and integrations between legacy systems and Dynamics 365.</div>
-  </div>
-</section>
-
-<section id="education">
-  <h2>Education</h2>
-  <ul class="compact-list">
-    <li><strong>University of Canterbury</strong> — BSc, Computer Science</li>
-    <li><strong>St Peter's College, Auckland</strong> — Cambridge A Levels</li>
-  </ul>
-</section>
-
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul class="compact-list">
-    <li><strong>PL-200</strong> — Power Platform Functional Consultant</li>
-    <li><strong>PL-900</strong> — Power Platform Fundamentals</li>
-  </ul>
-</section>
-
-<footer>
-  Connor Parsons &middot; connorparsons02@gmail.com
-</footer>
-
-</div>
-</body>
-</html>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--text:#1a1a2e;--muted:#555;--accent:#2563eb;--border:#e2e8f0;--bg:#fff;--max-w:760px}html{font-size:16px}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}.container{max-width:var(--max-w);margin:0 auto;padding:2.5rem 1.25rem}.variant-nav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem;font-size:.82rem}.variant-nav a{color:var(--accent);text-decoration:none;border:1px solid var(--border);padding:.25rem .5rem;border-radius:999px}header{margin-bottom:2rem}h1{font-size:1.9rem;font-weight:700;margin-bottom:.2rem}.subtitle{font-size:1rem;color:var(--muted);margin-bottom:.25rem}.tagline,.contact{font-size:.85rem;color:var(--muted)}.contact a{color:inherit}section{margin-bottom:1.5rem}h2{font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:.5rem;border-bottom:1px solid var(--border);padding-bottom:.25rem}p,.entry,.compact-list{font-size:.9rem;line-height:1.65}.skill-group{margin-bottom:.5rem}.skill-group strong{font-size:.8rem;font-weight:600;color:var(--muted);display:block;margin-bottom:.15rem}.skill-group span{font-size:.9rem}.entry{margin-bottom:1rem}.entry-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap}.entry-title{font-weight:600}.entry-org{font-size:.85rem;color:var(--muted);margin-bottom:.2rem}.entry-date{font-size:.8rem;color:var(--muted)}.entry ul{list-style:none;padding:0;margin-top:.2rem}.entry li{padding-left:1rem;position:relative;margin-bottom:.25rem}.entry li::before{content:"–";position:absolute;left:0;color:var(--muted)}.project{margin-bottom:.85rem}.project-title{font-weight:600;font-size:.9rem}.project-desc,.project-tech{font-size:.85rem;color:var(--muted)}.project-tech{font-style:italic;margin-top:.1rem}.compact-list{list-style:none}.compact-list li{margin-bottom:.2rem}footer{margin-top:2rem;padding-top:.75rem;border-top:1px solid var(--border);font-size:.78rem;color:var(--muted);text-align:center}@media(max-width:480px){.container{padding:1.25rem .85rem}h1{font-size:1.4rem}}
+</style></head><body><div class="container"><nav class="variant-nav"><a href="./">Original</a><a href="./jakes-resume/">Jake's Resume</a><a href="./altacv/">AltaCV</a><a href="./awesome-cv/">Awesome-CV</a></nav>
+<header><h1>Connor Parsons</h1><p class="subtitle">.NET / Power Platform Developer</p><p class="tagline">Dynamics 365, Dataverse, C# Plugins, Azure, TypeScript</p><div class="contact"><a href="mailto:connorparsons02@gmail.com">connorparsons02@gmail.com</a> · +64 20 4140 7002 · Christchurch, NZ / Remote / Auckland as needed · <a href="https://github.com/Cordedmink2">https://github.com/Cordedmink2</a></div></header>
+<section id="summary"><h2>Summary</h2><p>.NET / Power Platform developer with 2 years&#x27; experience building Dynamics 365 and Dataverse solutions for New Zealand clients. Strong in C# plugins, TypeScript web resources, Power Automate, Dataflows, KingswaySoft integrations, and Azure Function Apps, with an interest in maintainable, strongly typed Dataverse development and automated delivery practices. Experienced in migration and modernisation work, replacing legacy on-premises dependencies, and working directly with client stakeholders from requirements through delivery. Microsoft PL-200 and PL-900 certified.</p></section>
+<section id="skills"><h2>Skills</h2><div class="skill-group"><strong>Power Platform / Dynamics 365</strong><span>Dataverse, model-driven apps, Dynamics 365 customisation, Power Automate, Dataflows, Power Apps, SharePoint integration, Business Process Flows, DocumentCorePack</span></div>
+<div class="skill-group"><strong>.NET / Custom Development</strong><span>C#, Dataverse plugins, Azure Functions, TypeScript, JavaScript web resources, Webpack, Vite</span></div>
+<div class="skill-group"><strong>Integration / Migration</strong><span>KingswaySoft, data migration, on-premises to online migration, legacy SQL dependency replacement with Dataflows, storage queues, managed identity, authentication</span></div>
+<div class="skill-group"><strong>Delivery / ALM</strong><span>Azure DevOps boards, Git, CI/CD, managed solution delivery across environments, requirements gathering, demos, UAT/support, maintainable project structure</span></div>
+<div class="skill-group"><strong>Best-practice focus</strong><span>Typed Dataverse development, plugin testability, maintainable solution structure</span></div>
+<div class="skill-group"><strong>Additional Technical Background</strong><span>Java, Python, C++, NumPy, Unity</span></div></section>
+<section id="experience"><h2>Experience</h2><div class="entry"><div class="entry-header"><span class="entry-title">Developer</span><span class="entry-date">2024 – Present</span></div><div class="entry-org">Adaptable Consulting — Auckland, NZ</div><ul><li><strong>.NET / Dataverse Plugin Development:</strong> Designed, maintained, and built C# Dataverse plugin projects, including new projects started from scratch for client engagements.</li>
+<li><strong>Dynamics 365 On-Premises to Online Migration:</strong> Modernised legacy Dynamics functionality during an on-premises to online migration for a major New Zealand tertiary education client.</li>
+<li><strong>TypeScript / Web Resource Modernisation:</strong> Pioneered adoption of TypeScript + Webpack for Dynamics web resources, replacing legacy JavaScript patterns with a modern build pipeline.</li>
+<li><strong>Power Automate / SharePoint / Document Automation:</strong> Automated cross-site SharePoint document movement based on field values and Business Process Flow stages.</li>
+<li><strong>Azure / Integration Work:</strong> Built Azure Function Apps handling authentication, storage queues, and managed identity.</li>
+<li><strong>Client-Facing Delivery:</strong> Worked directly with clients using Azure DevOps boards across features, stories, and bugs.</li></ul></div></section>
+<section id="projects"><h2>Projects</h2><div class="project"><div class="project-title">Dynamics 365 On-Premises to Online Migration</div><div class="project-desc">Modernised legacy Dynamics functionality from an on-premises environment to Dynamics 365 online for a major New Zealand tertiary education client. Reworked deprecated JavaScript web resources, replaced legacy SQL dependency patterns with Dataflows, and supported stakeholder-facing delivery, UAT, and post-migration support.</div><div class="project-tech">Tech: Dynamics 365, Dataverse, TypeScript, JavaScript web resources, Dataflows, legacy SQL dependency replacement</div></div>
+<div class="project"><div class="project-title">Complaints / Intake Automation</div><div class="project-desc">Built a complaints and intake process for a New Zealand professional regulatory body where document-heavy intake work needed more repeatable handling. Implemented form handling, approval flows, Teams cards, notification emails, document generation, and stakeholder-facing support to improve process consistency.</div><div class="project-tech">Tech: Power Automate, Dynamics 365 / Dataverse, SharePoint, Teams, DocumentCorePack</div></div>
+<div class="project"><div class="project-title">Monorepo / TypeScript / CI/CD Tooling Architecture</div><div class="project-desc">Established a repeatable monorepo and build-pipeline approach for Dynamics 365 web resources and managed solution delivery across environments. Standardised TypeScript + Webpack/Vite development and solution-based project structure for maintainable new client engagements.</div><div class="project-tech">Tech: TypeScript, Webpack, Vite, Git, CI/CD, Dynamics 365 web resources</div></div></section>
+<section id="education"><h2>Education</h2><ul class="compact-list"><li><strong>University of Canterbury</strong> — Bachelor of Science, Computer Science major</li><li><strong>St Peter&#x27;s College, Auckland</strong> — Cambridge A Levels</li></ul></section>
+<section id="certifications"><h2>Certifications</h2><ul class="compact-list"><li><strong>Microsoft Certified: Power Platform Functional Consultant Associate</strong> — PL-200</li><li><strong>Microsoft Certified: Power Platform Fundamentals</strong> — PL-900</li></ul></section>
+<footer>Connor Parsons · <a href="mailto:connorparsons02@gmail.com">connorparsons02@gmail.com</a></footer></div></body></html>
