@@ -1,0 +1,18 @@
+# LaTeX build artifacts (the distributable PDF is Connor-Parsons-CV.pdf)
+main.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.dvi
+*.xdv
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db
